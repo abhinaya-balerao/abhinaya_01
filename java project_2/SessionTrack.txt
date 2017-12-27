@@ -1,3 +1,4 @@
 #	Date	Duration		TotalHours	Contents Covered
 1	23/12	7-8am			1			Git settings
 2	24/12	8:30-9:30am		2			More about Git
+3	27/12	7-8am			3			How java works, git ignore and data types
