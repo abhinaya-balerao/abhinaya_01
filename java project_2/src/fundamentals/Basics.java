@@ -12,6 +12,16 @@ public class Basics {
 		short s = (short)x;
 		
 		long l = x;
+		
+		String s1 = "Ram";
+		String s2 = new String("Ram");
+		String s3 = "Ram";
+		
+		System.out.println(s1 == s2);
+		System.out.println(s1 == s3);
+		
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.equals(s3));
 	}
 	
 	public void xyz(){
@@ -19,4 +29,7 @@ public class Basics {
 		//System.out.println(a);
 	}
 
+	
+	
+	
 }

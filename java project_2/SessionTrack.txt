@@ -3,3 +3,4 @@
 2	24/12	8:30-9:30am		2			More about Git
 3	27/12	7-8am			3			How java works, git ignore and data types
 4	28/12	7-8am			4			Git questions and Class and objects
+5	29/12	7-8am			5			Git queries on reset and Class, Constructor and String 
