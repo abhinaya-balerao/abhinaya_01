@@ -5,3 +5,4 @@
 4	28/12	7-8am			4			Git questions and Class and objects
 5	29/12	7-8am			5			Git queries on reset and Class, Constructor and String
 6	30/12	7-8am			6			Arrays and Operators
+7	05/01	7:20-8:20am		7			Flow Control, access modifiers and static

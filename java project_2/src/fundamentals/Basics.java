@@ -66,6 +66,12 @@ public class Basics {
 			System.out.println();
 		}
 		
+		Flat f1 = new Flat("Raj", 34000, 5);
+		
+		System.out.println(f1.owner);
+		System.out.println(f1.rent);
+		//System.out.println(f1.members);
+		
 		
 	}
 	
