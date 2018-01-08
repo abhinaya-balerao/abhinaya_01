@@ -6,4 +6,5 @@
 5	29/12	7-8am			5			Git queries on reset and Class, Constructor and String
 6	30/12	7-8am			6			Arrays and Operators
 7	05/01	7:20-8:20am		7			Flow Control, access modifiers and static
-8
+8	06/01	7-8am			8			OOPS Concepts started
+9	08/01	7-8am			9			OOPS Concepts completed
