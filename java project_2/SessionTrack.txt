@@ -9,3 +9,5 @@
 8	06/01	7-8am			8			OOPS Concepts started
 9	08/01	7-8am			9			OOPS Concepts completed
 10	10/01	7:25-8:25am		10			Collections
+11	12/01	7:25-8:25am		11			Debugging mode and Exception
+12	13/01	7:05-8:05am		12			Exception and file handling
