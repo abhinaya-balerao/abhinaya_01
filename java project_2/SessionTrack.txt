@@ -13,3 +13,5 @@
 12	13/01	7:05-8:05am		12			Exception and file handling
 13	17/01	7:00-8:00am		13          Maven setup and details
 14	19/01	7:00-8:00am		14			Browser setup
+15	20/01	7:00-8:00am		15			Mouse hover
+16	21/01	7-8am			16			Finding xpath
