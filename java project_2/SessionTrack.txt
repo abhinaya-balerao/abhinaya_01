@@ -16,6 +16,7 @@
 15	20/01	7:00-8:00am		15			Mouse hover
 16	21/01	7-8am			16			Finding xpath
 17	23/01	7-8am			17			Frame handling
-18	24/01	
+18	24/01	7-8am			18			
 19	25/01	7-8am			19			Alerts		
-20	26/01	7-8am			20			Javascript executor and 
+20	26/01	7-8am			20			Javascript executor
+21	27/01	7-8am			21			Page Object model with PageFactory
