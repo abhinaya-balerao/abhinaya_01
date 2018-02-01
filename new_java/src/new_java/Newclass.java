@@ -8,7 +8,7 @@ public class Newclass {
 	private void syso() {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Hello");
+		System.out.println("Hello java");
 
 	}
 }

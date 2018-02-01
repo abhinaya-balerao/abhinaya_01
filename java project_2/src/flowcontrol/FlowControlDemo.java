@@ -6,7 +6,7 @@ public class FlowControlDemo {
 
 	public static void main(String[] args) {
 		
-		/*String trafficColor="red";
+		String trafficColor="red";
 		
 		switch(trafficColor){
 		case "Green":
@@ -20,13 +20,15 @@ public class FlowControlDemo {
 			break;
 		default:
 			System.out.println("Not a valid color");
-		}*/
+		}
+	}
+}
 		
 		/*for(int i = 1; i<=10; i++){
 			if(i == 5)
 				break;
 			System.out.println(i);
-		}*/
+		}
 		
 		int[] marks = {45, 47, 32};
 		
@@ -45,6 +47,6 @@ public class FlowControlDemo {
 		System.out.println(f1.owner);
 		//System.out.println(f1.rent);
 		//System.out.println(f1.members);
-	}
+	}*/
 
-}
+

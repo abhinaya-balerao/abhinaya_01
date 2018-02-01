@@ -24,8 +24,7 @@ public class HdfcTest {
 		}
 		
 		driver.findElement(By.className("searchbox")).sendKeys("Loan");
-		Thread.sleep(4000);
-		wait.until(ExpectedConditions.elementToBeClickable(By.className("sf-searchicon")));
+	    wait.until(ExpectedConditions.elementToBeClickable(By.className("sf-searchicon")));
 		driver.findElement(By.className("sf-searchicon")).click();
 
 	}

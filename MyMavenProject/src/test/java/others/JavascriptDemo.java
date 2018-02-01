@@ -21,13 +21,14 @@ public class JavascriptDemo {
 		WebElement connectEle = driver.findElement(By.xpath("//*[text()='Connect with Us']"));
 		js.executeScript("arguments[0].scrollIntoView(true)", connectEle);
 		
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Shop from different categories')]")));
+		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='Customer Service']")));
 		//Thread.sleep(3000);
 		//driver.switchTo().defaultContent();
-		WebElement custServiceLink = driver.findElement(By.xpath("//*[contains(text(),'Shop from different categories')]"));
-		
+		WebElement custServiceLink = driver.findElement(By.xpath(("//a[text()='Customer Service']")));
+	
 		js.executeScript("arguments[0].scrollIntoView(false)", custServiceLink);
-		//custServiceLink.click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='Customer Service']")));
+		custServiceLink.click();
 		
 	}
 
