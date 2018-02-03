@@ -23,3 +23,6 @@
 22	28/01	7-8am			22			Jenkins and its plugins and tool configuration
 23	30/01	7-8am			23			Jenkins with Github
 24	31/01	7-8am			24			Autocomplete, Calendar
+25	01/02					25			Page Object Model
+26	02/02					26			Cucumber setup
+
