@@ -13,6 +13,10 @@ import cucumber.api.java.en.When;
 
 public class Definitions {
 	public WebDriver driver;
+	int num1;
+	int num2;
+	int sum;
+	String name;
 	
 	@Given("^browser has been launched$")
 	public void browser_has_been_launched() throws Throwable {
@@ -45,6 +49,23 @@ public class Definitions {
 	@When("^user search for a text in amazon search box and press enter$")
 	public void user_search_for_a_text_in_amazon_search_box_and_press_enter() throws Throwable {
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("cat"+Keys.ENTER);
+	}
+	
+	@Given("^user enters two numbers as (\\d+) and (\\d+)$")
+	public void user_enters_two_numbers_as_and(int arg1, int arg2) throws Throwable {
+	   num1 = arg1;
+	   num2 = arg2;
+	}
+
+	@When("^it get adds up with name as \"([^\"]*)\"$")
+	public void it_get_adds_up_with_name_as(String arg1) throws Throwable {
+		sum = num1 + num2;
+		name  = arg1;
+	}
+
+	@Then("^it should print the result$")
+	public void it_should_print_the_result() throws Throwable {
+	   System.out.println(name+":"+sum);
 	}
 	
 	@Then("^close the browser$")
