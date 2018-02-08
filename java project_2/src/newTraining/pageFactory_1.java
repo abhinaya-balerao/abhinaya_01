@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -32,22 +33,23 @@ public class pageFactory_1 {
 	@Test
 
 	public void Test1() {
-		dF = new defaultPage(driver);
-		System.out.println(dF);
+	
+		dF=PageFactory.initElements(driver, defaultPage.class);
 		dF.Signin();
-		sP = new signinPage(driver);
+		//sP = new signinPage(driver);
+		sP=PageFactory.initElements(driver, signinPage.class);
 		sP.Login("abhinaya1306@gmail.com", "rayaan18");
-		hP = new homePage(driver);
+		//hP = new homePage(driver);
 		hP.verifyText("MY ACCOUNT");
 	}
 
 	@Test
 
 	public void Test2() {
-
+		dF=PageFactory.initElements(driver, defaultPage.class);
 		dF.enterdetails("Summer");
-		rP = new resultsPage(driver);
-		rP.verifyItems();
+		//rP = new resultsPage(driver);
+		rP=PageFactory.initElements(driver, resultsPage.class);
 		rP.verify2();
 	}
 
