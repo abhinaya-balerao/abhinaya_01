@@ -7,13 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class defaultPage {
 
-	public WebDriver driver;
+	/*public WebDriver driver;
 
 	public defaultPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
+*/
 	@FindBy(xpath = "//a[@class='login']")
 	public WebElement signinButton;
 

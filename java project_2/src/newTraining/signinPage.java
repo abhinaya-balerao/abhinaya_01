@@ -8,13 +8,13 @@ import org.testng.annotations.Test;
 
 public class signinPage {
 	
-	public WebDriver driver;
+	/*public WebDriver driver;
 	
 	public signinPage(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+	*/
     @FindBy(xpath="//input[@id='email']")
 	
 	public WebElement emailID;
