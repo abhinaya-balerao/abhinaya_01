@@ -11,7 +11,7 @@ public class configuration1 {
 	
 	private static Properties prop;
 	public static void configuration(){
-	File file=new File("src/main/resoures/project.properties");
+	File file=new File("src/main/resources/project.properties");
 	
     InputStream get1 = null;
     try{
