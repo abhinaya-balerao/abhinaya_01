@@ -27,3 +27,5 @@
 26	02/02					26			Cucumber setup
 27	03/02	7-8am			27			Some question here and there
 28	06/02	7-8am			28			Cucumber with Parameterization
+29	08/02	7-8am			29			Scenario outline and some fixes
+30	09/02	7-8am			30			Datatable and hooks

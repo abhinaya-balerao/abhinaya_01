@@ -1,12 +1,17 @@
 package stepdef;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-import cucumber.api.PendingException;
+import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -23,7 +28,14 @@ public class Definitions {
 		System.setProperty("webdriver.chrome.driver", "Browsers/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
-
+	
+	
+	@Before()
+	public void intiateBrowser(Scenario scenario){
+		System.out.println("Started execution for "+scenario.getName());
+		System.setProperty("webdriver.chrome.driver", "Browsers/chromedriver.exe");
+		driver = new ChromeDriver();
+	}
 	
 	@When("^user opens url \"([^\"]*)\"$")
 	public void user_opens_url(String url) throws Throwable {
@@ -66,6 +78,23 @@ public class Definitions {
 	@Then("^it should print the result$")
 	public void it_should_print_the_result() throws Throwable {
 	   System.out.println(name+":"+sum);
+	}
+	
+	@When("^user check for groceries list$")
+	public void user_check_for_groceries_list(DataTable arg1) throws Throwable {
+		List<List<String>> tableData = arg1.raw();
+		for(int i =0;i<tableData.size();i++){
+			List<String> rowData = tableData.get(i);
+			for(int j=0;j<rowData.size();j++){
+				System.out.print(rowData.get(j)+"\t");
+			}
+			System.out.println();
+		}
+	}
+	
+	@After
+	public void closeBrowser(){
+		driver.close();
 	}
 	
 	@Then("^close the browser$")
